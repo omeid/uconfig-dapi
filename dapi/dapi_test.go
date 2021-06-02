@@ -35,12 +35,7 @@ func TestDAPIBasic(t *testing.T) {
 
 	value := fDAPI{}
 
-	conf, err := uconfig.New(&value)
-	if err != nil {
-		t.Fatal(err)
-	}
-
-	err = conf.Visitor(dapi.New("testdata"))
+	conf, err := uconfig.New(&value, dapi.New("testdata"))
 	if err != nil {
 		t.Fatal(err)
 	}
