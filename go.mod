@@ -1,11 +1,14 @@
 module github.com/omeid/uconfig-dapi
 
-go 1.16
+go 1.18
 
 require (
-	github.com/go-ini/ini v1.62.0
-	github.com/go-test/deep v1.0.7
-	github.com/omeid/uconfig v0.0.0-20210602081755-58e8705307eb
-	github.com/smartystreets/goconvey v1.6.4 // indirect
-	gopkg.in/ini.v1 v1.62.0 // indirect
+	github.com/go-ini/ini v1.66.6
+	github.com/go-test/deep v1.0.8
+	github.com/omeid/uconfig v0.7.0
+)
+
+require (
+	github.com/stretchr/testify v1.7.2 // indirect
+	golang.org/x/text v0.14.0 // indirect
 )
